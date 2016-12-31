@@ -1,0 +1,13 @@
+branch-defaults:
+  master:
+    environment: null
+    group_suffix: null
+global:
+  application_name: dashboard
+  branch: null
+  default_ec2_keyname: aws-eb
+  default_platform: python2.7
+  default_region: ap-south-1
+  profile: eb-cli
+  repository: null
+  sc: git

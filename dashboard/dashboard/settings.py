@@ -25,7 +25,7 @@ SECRET_KEY = '0$mhjg2$_#4t^%0ns^0t^w4uv5by83#h^jjt@zna3zq$eq(564'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost' , 'testdb-sks.database.windows.net']
 
 # Application definition
 
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'dashboard.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'testing_send_data',
+        'USER': 'retail',
+        'PASSWORD' : 'Poc1@123', 
+        'HOST' : 'testdb-sks.database.windows.net',
+        'PORT' : '3306',
     }
 }
 
